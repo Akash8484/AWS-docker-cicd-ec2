@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS DevOps CI/CD Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    }
+
+    .card {
+      width: min(680px, 90%);
+      padding: 48px 36px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: 2.2rem;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #dbeafe;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #16a34a;
+      font-weight: bold;
+    }
+
+    .stack {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: #bfdbfe;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>AWS DevOps CI/CD Pipeline</h1>
+    <p>
+      This application is deployed automatically from GitHub to an AWS EC2
+      instance using Docker, GitHub Actions, and Nginx.
+    </p>
+    <div class="status">Deployment Status: Live</div>
+    <p class="stack">
+      AWS EC2 · Docker · Nginx · GitHub Actions · CloudWatch
+    </p>
+  </main>
+</body>
+</html>
